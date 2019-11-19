@@ -4,7 +4,7 @@
  * @param expectedType the type of result expected e.g. string/object/array/boolean etc
  * @param storageType 1 - sessionStorage, 0 - localStorage (default if no option provided)
  */
-export const fetchFromStorage = (keyToFetch: string, expectedType: any, storageType = 0) => {
+export const fetchFromStorage = (keyToFetch: string, expectedType: any, storageType = 0, logging = false) => {
     let Storage = storageType === 1 ? sessionStorage : localStorage;
     try {
         if (storageType === 1) {
@@ -13,7 +13,9 @@ export const fetchFromStorage = (keyToFetch: string, expectedType: any, storageT
         return JSON.parse(Storage[keyToFetch]);
     }
     catch (ex) {
-        console.log(`An error occured while fetcing ${keyToFetch} from ${Storage}`);
+        if (logging === true) {
+            console.log(`An error occured while fetcing ${keyToFetch} from ${Storage}`);
+        }
     }
     let Result;
     switch (expectedType) {
