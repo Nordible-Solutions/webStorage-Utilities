@@ -1,6 +1,6 @@
 {
   "name": "webstorage-utilities",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A ready to use npm utility for localStorage and sessionStorage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
