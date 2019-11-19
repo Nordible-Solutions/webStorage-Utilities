@@ -1,12 +1,32 @@
 {
   "name": "webstorage-utilities",
-  "version": "1.0.0",
-  "description": "Extremely basic template of a Typescript project",
+  "version": "1.0.1",
+  "description": "A ready to use npm utility for localStorage and sessionStorage",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc",
     "dev": "tsc && node dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordible/webStorage-Utilities.git"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "localStorage",
+    "sessionStorage",
+    "utility"
+  ],
   "author": "Nordible <info@nordible.com> (https://nordible.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nordible/webStorage-Utilities/issues"
+  },
+  "homepage": "https://nordible.com/webStorage-Utilities/",
+  "files": [
+    "dist/*"
+  ]
 }
