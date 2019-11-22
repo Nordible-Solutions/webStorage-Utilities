@@ -60,6 +60,6 @@ export const set = (key: string, value: any, storageType = 0, enableLogging = fa
         }
     }
     if (enableLogging === true) {
-        console.log(`The value is set for ${key} = ${value} ${copyright}`);
+        console.log(`${Storage[key]} The value is set for ${key} = ${value} ${copyright}`);
     }
 }
