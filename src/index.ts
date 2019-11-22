@@ -6,7 +6,7 @@ const determineStorageType = (storageType = 0) => {
     }
 }
 
-const copyright = "\nwebstorage-utilities by &copy; nordible";
+const copyright = "\nwebstorage-utilities by \u00A9 nordible https://nordible.com/";
 
 /**
  * get the value from the web storage
