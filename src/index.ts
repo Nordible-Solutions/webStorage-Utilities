@@ -12,7 +12,7 @@ const copyright = "\nwebstorage-utilities by \u00A9 nordible https://nordible.co
  * get the value from the web storage
  * @param key the key to fetch from the web storage specified by storagetype
  * @param expectedType the type of result expected e.g. string/object/array/boolean etc
- * @param storageType 1 - sessionStorage, 0 - localStorage (default if no option provided)
+ * @param storageType 1 - sessionStorage, 0 - localStorage (default 0)
  * @param enableLogging flag for enabling/disabling logging
  */
 export const get = (key: string, expectedType: any, storageType = 0, enableLogging = false) => {
@@ -46,7 +46,7 @@ export const get = (key: string, expectedType: any, storageType = 0, enableLoggi
  * set the value in the web storage
  * @param key the key to set in the web storage specified by storagetype
  * @param value the value be set in the web storage specified by storagetype
- * @param storageType  1 - sessionStorage, 0 - localStorage (default if no option provided)
+ * @param storageType  1 - sessionStorage, 0 - localStorage (default 0)
  * @param enableLogging enableLogging flag for enabling/disabling logging 
  */
 export const set = (key: string, value: any, storageType = 0, enableLogging = false) => {
