@@ -52,7 +52,7 @@ export const get = (key: string, expectedType: any, storageType = 0, enableLoggi
 export const set = (key: string, value: any, storageType = 0, enableLogging = false) => {
     let Storage = determineStorageType(storageType);
     try {
-        Storage.setItem(key, value);
+        Storage.setItem(key, JSON.stringify(value));
     }
     catch (ex) {
         if (enableLogging === true) {
